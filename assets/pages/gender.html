@@ -1,0 +1,133 @@
+<!------- DATE SELECTOR -------->
+<div
+    class="d-flex flex-row align-items-center justify-content-evenly m-2 p-2 px-3 gap-3 rounded-3"
+    id="dateSelector"
+>
+    <div class="d-flex justify-content-center align-items-center gap-2">
+        <label for="selectedYear">Year:</label>
+        <select name="selectedYear" id="selectedYear" class="form-select">
+            <option selected value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+        </select>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center gap-2">
+        <label for="selectedMonth">Month:</label>
+        <select
+            name="selectedMonth"
+            id="selectedMonth"
+            class="text-center form-select"
+        >
+            <option selected value="-">-</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+    </div>
+</div>
+
+<main>
+    <div class="outline main-wrapper pt-lg-3">
+        <div class="outline row">
+            <!----- MAIN CHART / UPPER INFO ------->
+            <section class="outline main-chart-section col-lg-8">
+                <aside class="outline row pb-3">
+                    <!------ CHART NAME ------>
+                    <div class="outline col-lg-4" id="card-chart-name">
+                        <div class="card-wrapper card shadow-sm text-center">
+                            <div
+                                class="card-body card-info-height align-items-center justify-content-center d-flex flex-column"
+                            >
+                                <h5 class="card-title bold m-0">GENDER</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ CHART DATE ------>
+                    <div class="outline col-lg-4" id="card-date">
+                        <div class="card-wrapper card shadow-sm text-center">
+                            <div
+                                class="card-body card-info-height d-flex flex-column align-items-center justify-content-center"
+                            >
+                                <h6
+                                    class="card-subtitle mb-2 text-body-secondary"
+                                >
+                                    DATE
+                                </h6>
+                                <div class="d-flex flex-row gap-2 gap-lg-4">
+                                    <h5
+                                        class="card-title card-year m-0"
+                                        id="card-year"
+                                    >
+                                        2023
+                                    </h5>
+                                    <h5
+                                        class="card-title card-month m-0"
+                                        id="card-month"
+                                    >
+                                        -
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ TOTAL ------>
+                    <aside class="SideTotal col-lg-4 outline visually-hidden">
+                        <div class="card-wrapper card shadow-sm text-center">
+                            <div class="card-body card-info-height">
+                                <h6
+                                    class="card-subtitle mb-2 text-body-secondary"
+                                >
+                                    TOTAL
+                                </h6>
+                                <h5 class="card-title m-0">1234</h5>
+                            </div>
+                        </div>
+                    </aside>
+                </aside>
+
+                <!----- MAIN CHART ------->
+                <div class="outline container-fluid p-0 m-0">
+                    <div class="main-chart-wrapper card shadow rounded-3">
+                        <canvas class="" id="main-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!----- SIDE CHARTS ------->
+            <section
+                class="outline side-wrapper col-lg-4 px-3 d-flex flex-column justify-content-between"
+            >
+                <!----- YEARLY CHART ------->
+                <div class="outline container-fluid p-0 m-0">
+                    <div class="yearly-chart-wrapper card shadow rounded-3">
+                        <canvas class="" id="yearly-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-------- QUARTERLY --------->
+                <div class="outline side-quarterly container-fluid p-0 m-0">
+                    <div
+                        class="side-chart-wrapper card shadow rounded-3 p-lg-3"
+                    >
+                        <canvas id="side-chart-quarterly"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>

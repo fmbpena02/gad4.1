@@ -1,0 +1,44 @@
+.dropdown {
+    margin: 5px 0;
+}
+/* PARA SA MODAL SHESH */
+.create {
+    display: flex;
+    flex-direction: column;
+}
+.create input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.create .btn-dark {
+    margin-top: 5px;
+    width: 20%;
+}
+.create .description {
+    height: 150px;
+}
+.dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    color: #000;
+    padding: 10px;
+}
+#btn-close:hover,
+#x:hover {
+    background-color: #ce5a67;
+    color: #000;
+}
+
+.action {
+    color: white;
+}
+.action:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+#table {
+    margin: 10px;
+}
